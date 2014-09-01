@@ -375,16 +375,16 @@ int main()
     while ( mtx_2048.random_increase() )
     {
         mtx_2048.print();
-        cout<<" Operation? input string - up,down,left,right : ";
+        cout<<" Operation? input string - w, s, a, d : ";
         cin>>input;
 
-        if( input == "down" && mtx_2048.down() )
+        if( input == "s" && mtx_2048.down() )
             continue;
-        else if (input == "right" && mtx_2048.right() )
+        else if (input == "d" && mtx_2048.right() )
             continue;
-        else if (input == "up" && mtx_2048.up() )
+        else if (input == "w" && mtx_2048.up() )
             continue;
-        else if( input == "left" && mtx_2048.left() )
+        else if( input == "a" && mtx_2048.left() )
             continue;
         else {
             cout << " Game Over! " << endl;
